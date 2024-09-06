@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  background-color: #2ec7ca;
+}
+
+.pbg {
+	background-image: linear-gradient(to top, #94f7b2, #86e9a4, #78da97, #6acc8a, #5cbe7d);
+}
+
+.hover {
+  border: 5px solid;
+  border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .5s, -webkit-mask-position .5s .5s;
+  border-radius: 10px;
+  border-spacing: 5px;
+}
+.hover:hover {
+  --_i: 100%;
+  color: white;
+  transition: .5s, -webkit-mask-size .5s .5s;
+  background-image: linear-gradient(to right top, #855799, #a15499, #bb5093, #d44d88, #e84c78, #ec4c74, #f04d70, #f34e6b, #eb4c74, #e24b7d, #d74c85, #cc4d8b);
+}
+
+h3 {
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+  margin:0;
+  cursor: pointer;
+  padding: 0 .1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------Card Style---------------*/
+
+.bg {
+	background-color: #1e884b;
+}
